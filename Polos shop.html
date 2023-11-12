@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ashion Template">
+    <meta name="keywords" content="Ashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ashion | Template</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <style> 
+        .dimScreen {width: 100%;height: 130%;overflow: auto !important;background:rgb(11, 11, 11) !important;position: fixed;top: 0;left: 0;z-index: 100;}
+        .img_slider{height:85vh !important;overflow:hidden;border-radius:5px;}
+        @media only screen and (max-width: 600px) {
+            .img_slider{max-height: 60vh;}
+            }
+    </style>
+
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <div id="product-details"></div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__close">+</div>
+        <ul class="offcanvas__widget">
+            <li><span class="icon_search search-switch"></span></li>
+            <li><a href="#"><span class="icon_heart_alt"></span>
+                <div class="tip">2</div>
+            </a></li>
+            <li><a href="#"><span class="icon_bag_alt"></span>
+                <div class="tip">2</div>
+            </a></li>
+        </ul>
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__auth">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-3 col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-7">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="#">Women’s</a></li>
+                            <li><a href="#">Men’s</a></li>
+                            <li class="active"><a href="./shop.html">Shop</a></li>
+                            <li><a href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="./product-details.html">Product Details</a></li>
+                                    <li><a href="./shop-cart.html">Shop Cart</a></li>
+                                    <li><a href="./checkout.html">Checkout</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__right">
+                        <div class="footer__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-whatsapp"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                        <span style="font-weight: 800;color: brown;font-size: 35px;">SHM Polo's</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Shop Section Begin -->
+    <section class="shop spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="shop__sidebar">
+                        <div class="sidebar__categories">
+                            <div class="section-title">
+                                <h4>Categories</h4>
+                            </div>
+                            <div class="categories__accordion">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-heading active">
+                                            <a data-toggle="collapse" data-target="#collapseOne">Cloathing Categories</a>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li><a href="Hoodies shop.html">Hoodies</a></li>
+                                                    <li><a href="Oversize shop.html">Oversize</a></li>
+                                                    <li><a href="Tshirts shop.html">T-shirts</a></li>
+                                                    <li><a href="Trousers shop.html">Trousers</a></li>
+                                                    <li><a href="Polos shop.html">Polos</a></li>
+                                                    <li><a href="Plain Tshirt.html">Plain T-shirts</a></li>
+                                                    <li><a href="Graphic Tshirt.html">Graphic T-shirt</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="card">
+                                        <div class="card-heading">
+                                            <a data-toggle="collapse" data-target="#collapseFour">Accessories</a>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li><a href="#">Glasses</a></li>
+                                                    <li><a href="#">Chains</a></li>
+                                                    <li><a href="#">Bands</a></li>
+                                                    <li><a href="#">watches</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Black/1.jpg">
+                                    <div class="label new">New</div>
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Black/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                           <li><a href="#" onclick="loadProductDetails('Black | POLO SHIRTS','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Black/1.jpg','HSM%20Images/Polo/Black/2.jpg','HSM%20Images/Polo/Black/3.jpg','HSM%20Images/Polo/Black/2.jpg','HSM%20Images/Polo/Black/1.jpg','HSM%20Images/Polo/Black/3.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                        </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Black | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Brown/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Brown/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Brown | POLO SHIRTS','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Brown/1.jpg','HSM%20Images/Polo/Brown/2.jpg','HSM%20Images/Polo/Brown/3.jpg','HSM%20Images/Polo/Brown/4.jpg','HSM%20Images/Polo/Brown/5.jpg','HSM%20Images/Polo/Brown/3.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Brown | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Charcoal_Grey/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Charcoal_Grey/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Charcoal Grey | POLO','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Charcoal_Grey/1.jpg','HSM%20Images/Polo/Charcoal_Grey/2.jpg','HSM%20Images/Polo/Charcoal_Grey/3.jpg','HSM%20Images/Polo/Charcoal_Grey/2.jpg','HSM%20Images/Polo/Charcoal_Grey/1.jpg','HSM%20Images/Polo/Charcoal_Grey/3.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Charcoal Grey | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Coffee/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Coffee/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Coffee | POLO SHIRTS','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Coffee/1.jpg','HSM%20Images/Polo/Coffee/2.jpg','HSM%20Images/Polo/Coffee/3.jpg','HSM%20Images/Polo/Coffee/4.jpg','HSM%20Images/Polo/Coffee/2.jpg','HSM%20Images/Polo/Coffee/3.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Coffee | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Grey/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Grey/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Grey | POLO SHIRTS','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Grey/1.jpg','HSM%20Images/Polo/Grey/2.jpg','HSM%20Images/Polo/Grey/3.jpg','HSM%20Images/Polo/Grey/4.jpg','HSM%20Images/Polo/Grey/1.jpg','HSM%20Images/Polo/Grey/3.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Grey | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Heather_Grey/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Heather_Grey/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Heather Grey | POLO','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Heather_Grey/1.jpg','HSM%20Images/Polo/Heather_Grey/2.jpg','HSM%20Images/Polo/Heather_Grey/3.jpg','HSM%20Images/Polo/Heather_Grey/4.jpg','HSM%20Images/Polo/Heather_Grey/5.jpg','HSM%20Images/Polo/Heather_Grey/6.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Heather Grey | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Lemon/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Lemon/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Lemon | POLO SHIRTS','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Lemon/1.jpg','HSM%20Images/Polo/Lemon/2.jpg','HSM%20Images/Polo/Lemon/3.jpg','HSM%20Images/Polo/Lemon/4.jpg','HSM%20Images/Polo/Lemon/5.jpg','HSM%20Images/Polo/Lemon/6.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Lemon | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Mustard/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Mustard/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Mustard | POLO SHIRTS','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Mustard/1.jpg','HSM%20Images/Polo/Mustard/2.jpg','HSM%20Images/Polo/Mustard/3.jpg','HSM%20Images/Polo/Mustard/4.jpg','HSM%20Images/Polo/Mustard/5.jpg','HSM%20Images/Polo/Mustard/6.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Mustard | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Ocean_Blue/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Ocean_Blue/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Ocean Blue | POLO','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Ocean_Blue/1.jpg','HSM%20Images/Polo/Ocean_Blue/2.jpg','HSM%20Images/Polo/Ocean_Blue/3.jpg','HSM%20Images/Polo/Ocean_Blue/4.jpg','HSM%20Images/Polo/Ocean_Blue/5.jpg','HSM%20Images/Polo/Ocean_Blue/6.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Ocean Blue | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Orange/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Orange/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Orange | POLO SHIRTS','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Orange/1.jpg','HSM%20Images/Polo/Orange/2.jpg','HSM%20Images/Polo/Orange/3.jpg','HSM%20Images/Polo/Orange/4.jpg','HSM%20Images/Polo/Orange/5.jpg','HSM%20Images/Polo/Orange/6.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Orange | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Parrot_Green/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Parrot_Green/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Parrot Green | POLO','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Parrot_Green/1.jpg','HSM%20Images/Polo/Parrot_Green/2.jpg','HSM%20Images/Polo/Parrot_Green/3.jpg','HSM%20Images/Polo/Parrot_Green/4.jpg','HSM%20Images/Polo/Parrot_Green/5.jpg','HSM%20Images/Polo/Parrot_Green/6.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Parrot Green | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Peacock_Blue/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Peacock_Blue/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Peacock Blue | POLO','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Peacock_Blue/1.jpg','HSM%20Images/Polo/Peacock_Blue/2.jpg','HSM%20Images/Polo/Peacock_Blue/3.jpg','HSM%20Images/Polo/Peacock_Blue/4.jpg','HSM%20Images/Polo/Peacock_Blue/1.jpg','HSM%20Images/Polo/Peacock_Blue/2.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Peacock Blue | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Pink/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Pink/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Pink | POLO SHIRTS','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Pink/1.jpg','HSM%20Images/Polo/Pink/2.jpg','HSM%20Images/Polo/Pink/3.jpg','HSM%20Images/Polo/Pink/4.jpg','HSM%20Images/Polo/Pink/5.jpg','HSM%20Images/Polo/Pink/3.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Pink | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Purple/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Purple/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Purple | POLO SHIRTS','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Purple/1.jpg','HSM%20Images/Polo/Purple/2.jpg','HSM%20Images/Polo/Purple/3.jpg','HSM%20Images/Polo/Purple/4.jpg','HSM%20Images/Polo/Purple/5.jpg','HSM%20Images/Polo/Purple/6.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Purple | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Red/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Red/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Red | POLO SHIRTS','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Red/1.jpg','HSM%20Images/Polo/Red/2.jpg','HSM%20Images/Polo/Red/3.jpg','HSM%20Images/Polo/Red/4.jpg','HSM%20Images/Polo/Red/5.jpg','HSM%20Images/Polo/Red/2.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Red | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Royal_Blue/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Royal_Blue/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Royal Blue | POLO','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Royal_Blue/1.jpg','HSM%20Images/Polo/Royal_Blue/2.jpg','HSM%20Images/Polo/Royal_Blue/3.jpg','HSM%20Images/Polo/Royal_Blue/4.jpg','HSM%20Images/Polo/Royal_Blue/5.jpg','HSM%20Images/Polo/Royal_Blue/6.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Royal Blue | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Sea_Blue/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Sea_Blue/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Sea Blue | POLO','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Sea_Blue/1.jpg','HSM%20Images/Polo/Sea_Blue/2.jpg','HSM%20Images/Polo/Sea_Blue/3.jpg','HSM%20Images/Polo/Sea_Blue/4.jpg','HSM%20Images/Polo/Sea_Blue/1.jpg','HSM%20Images/Polo/Sea_Blue/2.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Sea Blue | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/Sky_Blue/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/Sky_Blue/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('Sky Blue | POLO','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/Sky_Blue/1.jpg','HSM%20Images/Polo/Sky_Blue/2.jpg','HSM%20Images/Polo/Sky_Blue/3.jpg','HSM%20Images/Polo/Sky_Blue/4.jpg','HSM%20Images/Polo/Sky_Blue/5.jpg','HSM%20Images/Polo/Sky_Blue/3.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Sky Blue | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="HSM%20Images/Polo/White/1.jpg">
+                                    <ul class="product__hover">
+                                        <li><a href="HSM Images/Polo/White/1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <!-- loadProductDetails (catagory, title , price , discount_price , description , size , img_1 , img_2 , img_3 , img_4 , img_5 , img_6 , img_7) -->
+                                        <li><a href="#" onclick="loadProductDetails('White | POLO SHIRTS','Polo','1200.00','1000','Introducing our versatile Polo Shirts! Crafted from soft, high-quality cotton, these shirts effortlessly blend casual comfort with a touch of formality. Whether you are dressing up or keeping it laid-back, our Polo Shirts ensure you look and feel great. Discover the perfect balance of style and comfort for any occasion.','s &emsp; m &emsp; l &emsp; xl &emsp; xxl','HSM%20Images/Polo/White/1.jpg','HSM%20Images/Polo/White/2.jpg','HSM%20Images/Polo/White/3.jpg','HSM%20Images/Polo/White/4.jpg','HSM%20Images/Polo/White/5.jpg','HSM%20Images/Polo/White/3.jpg','HSM%20Images/polo/size%20chart/polo%20chart.png')"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">White | POLO SHIRTS</a></h6>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product__price">RS 1000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop Section End -->
+
+    <!-- Instagram Begin -->
+    <div class="instagram">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                    <div class="instagram__item set-bg" data-setbg="img/instagram/insta-1.jpg">
+                        <div class="instagram__text">
+                            <i class="fa fa-instagram"></i>
+                            <a href="#">@ ashion_shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                    <div class="instagram__item set-bg" data-setbg="img/instagram/insta-2.jpg">
+                        <div class="instagram__text">
+                            <i class="fa fa-instagram"></i>
+                            <a href="#">@ ashion_shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                    <div class="instagram__item set-bg" data-setbg="img/instagram/insta-3.jpg">
+                        <div class="instagram__text">
+                            <i class="fa fa-instagram"></i>
+                            <a href="#">@ ashion_shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                    <div class="instagram__item set-bg" data-setbg="img/instagram/insta-4.jpg">
+                        <div class="instagram__text">
+                            <i class="fa fa-instagram"></i>
+                            <a href="#">@ ashion_shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                    <div class="instagram__item set-bg" data-setbg="img/instagram/insta-5.jpg">
+                        <div class="instagram__text">
+                            <i class="fa fa-instagram"></i>
+                            <a href="#">@ ashion_shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                    <div class="instagram__item set-bg" data-setbg="img/instagram/insta-6.jpg">
+                        <div class="instagram__text">
+                            <i class="fa fa-instagram"></i>
+                            <a href="#">@ ashion_shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Instagram End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        cilisis.</p>
+                        <div class="footer__payment">
+                            <a href="#"><img src="img/payment/payment-1.png" alt=""></a>
+                            <a href="#"><img src="img/payment/payment-2.png" alt=""></a>
+                            <a href="#"><img src="img/payment/payment-3.png" alt=""></a>
+                            <a href="#"><img src="img/payment/payment-4.png" alt=""></a>
+                            <a href="#"><img src="img/payment/payment-5.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-5">
+                    <div class="footer__widget">
+                        <h6>Quick links</h6>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="footer__widget">
+                        <h6>Account</h6>
+                        <ul>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Orders Tracking</a></li>
+                            <li><a href="#">Checkout</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-8">
+                    <div class="footer__newslatter">
+                        <h6>NEWSLETTER</h6>
+                        <form action="#">
+                            <input type="text" placeholder="Email">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <div class="footer__copyright__text">
+                        <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                    </div>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+
+    <script>
+
+// script.js
+
+function loadProductDetails(title,category,price,discount_price,description,size,img_1,img_2,img_3,img_4,img_5,img_6,img_7) {
+  var productDetails = document.getElementById('product-details');
+  
+  // Create a product detail element
+  var productDetail = document.createElement('div');
+  productDetail.classList.add('product');
+  
+  // Populate the product detail element
+  productDetail.innerHTML = `
+    <div class="dimScreen">
+        <button onclick="closeProductDetails()" style="font-weight:900;color:white; font-size:18;background:black; position:fixed; right:0">x</button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 mt-3">
+                        <!-- Carousel -->
+                        <div id="demo" class="carousel slide img_slider" data-bs-ride="carousel" style="height:85vh !important;overflow:hidden;border-radius:5px">
+
+                            <!-- Indicators/dots -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+                            </div>
+                        
+                            <!-- The slideshow/carousel -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="${img_1}" alt="img_1" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="${img_2}" alt="img_2" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="${img_3}" alt="img_3" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="${img_4}" alt="img_4" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="${img_5}" alt="img_5" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="${img_6}" alt="img_6" class="d-block" style="width:100%">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="${img_7}" alt="img_7" class="d-block" style="width:100%">
+                                </div>
+                            </div>  
+                            <!-- Left and right controls/icons -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 mt-4">
+                        <p class="mb-3" style="font-weight:800;font-size:3.2rem"> ${title} </p>
+                        <span style="font-weight:400;font-size:1rem;color:grey;">${category} </span>
+                        <div class="product__details__price">RS ${discount_price} <span>RS ${price}</span></div>
+                        <div class="col-lg-12 mt-3" style="height:100vh !important;overflow: auto !important;">
+                            <p>
+                                ${description} 
+
+                                <div class="product__details__widget">
+                            <ul>
+                                <li>
+                                    <span>Available size:</span>
+                                    <div class="size__btn">
+                                        <label for="xs-btn" class="active">
+                                            <input type="radio" id="xs-btn">
+                                            ${size}
+                                        </label>
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+
+
+
+
+
+
+                                <div class="product__details__button" style="margin-top:20px">
+                                    <a href="#" class="cart-btn"><span class="icon_bag_alt"></span> Placed Order</a>
+                                </div>
+                                <p style="color:red;"><b>Note : </b> Please Take Screent Short of this Page before Placing an Order</p>
+                            </p>  
+                            
+                            <div class="container">
+                    <marquee class="m" style="font-family: 'Anton', sans-serif;
+                    font-size:25px;color:#bdb7b7;font-weight:600;padding-top:15px;" scrollamount="10px" loop="infinite" direction="left">Elegant | Chic | Sophisticated | Fashionable | Trendy | Classy | Graceful | Stunning | Eye-catching | Dazzling | Striking | Exquisite | Gorgeous | Beautifully | tailored | Well-fitted | Flattering | Impeccable | Magnificent | Splendid Elegant | Chic | Sophisticated | Fashionable | Trendy | Classy | Graceful | Stunning | Eye-catching | Dazzling | Striking | Exquisite | Gorgeous | Beautifully | tailored | Well-fitted | Flattering | Impeccable | Magnificent | Splendid  Elegant | Chic | Sophisticated | Fashionable | Trendy | Classy | Graceful | Stunning | Eye-catching | Dazzling | Striking | Exquisite | Gorgeous | Beautifully | tailored | Well-fitted | Flattering | Impeccable | Magnificent | Splendid | Elegant | Chic | Sophisticated | Fashionable | Trendy | Classy | Graceful | Stunning | Eye-catching | Dazzling | Striking | Exquisite | Gorgeous | Beautifully | tailored | Well-fitted | Flattering | Impeccable | Magnificent | Splendid |  Elegant | Chic | Sophisticated | Fashionable | Trendy | Classy | Graceful | Stunning | Eye-catching | Dazzling | Striking | Exquisite | Gorgeous | Beautifully | tailored | Well-fitted | Flattering | Impeccable | Magnificent | Splendid Elegant | Chic | Sophisticated | Fashionable | Trendy | Classy | Graceful | Stunning | Eye-catching | Dazzling | Striking | Exquisite | Gorgeous | Beautifully | tailored | Well-fitted | Flattering | Impeccable | Magnificent | Splendid |  Elegant | Chic | Sophisticated | Fashionable | Trendy | Classy | Graceful | Stunning | Eye-catching | Dazzling | Striking | Exquisite | Gorgeous | Beautifully | tailored | Well-fitted | Flattering | Impeccable | Magnificent | Splendid |  Elegant | Chic | Sophisticated | Fashionable | Trendy | Classy | Graceful | Stunning | Eye-catching | Dazzling | Striking | Exquisite | Gorgeous | Beautifully | tailored | Well-fitted | Flattering | Impeccable | Magnificent | Splendid |  Elegant | Chic | Sophisticated | Fashionable | Trendy | Classy | Graceful | Stunning | Eye-catching | Dazzling | Striking | Exquisite | Gorgeous | Beautifully | tailored | Well-fitted | Flattering | Impeccable | Magnificent | Splendid |  Elegant | Chic | Sophisticated | Fashionable | Trendy | Classy | Graceful | Stunning | Eye-catching | Dazzling | Striking | Exquisite | Gorgeous | Beautifully | tailored | Well-fitted | Flattering | Impeccable | Magnificent | Splendid |</marquee>
+                </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+  `;
+  
+  // Clear any previous content in the product details
+  productDetails.innerHTML = '';
+  
+  // Append the product detail to the product details container
+  productDetails.appendChild(productDetail);
+  
+  // Listen for the "Esc" key press
+  document.addEventListener('keyup', function(e) {
+    if (e.key === 'Escape') {
+      closeProductDetails();
+    }
+  });
+}
+
+function closeProductDetails() {
+  var productDetails = document.getElementById('product-details');
+  productDetails.innerHTML = '';
+}
+
+ </script>
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
